@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CFEBFCA0-9A3F-4BF1-A9A6-1C5B8896801B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Formmsture101</RootNamespace>
+    <AssemblyName>Formmsture101</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\DB_ConnectionString.cs" />
+    <Compile Include="DB_Formmsture101DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_Formmsture101DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ADDFormulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ADDFormulario.Designer.cs">
+      <DependentUpon>frm_ADDFormulario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AreaAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AreaAdmin.Designer.cs">
+      <DependentUpon>frm_AreaAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CadastroProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CadastroProfessor.Designer.cs">
+      <DependentUpon>frm_CadastroProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_EditInfoLogADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_EditInfoLogADM.Designer.cs">
+      <DependentUpon>frm_EditInfoLogADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_FormularioProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_FormularioProfessor.Designer.cs">
+      <DependentUpon>frm_FormularioProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_FormularioAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_FormularioAluno.Designer.cs">
+      <DependentUpon>frm_FormularioAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Formularios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Formularios.Designer.cs">
+      <DependentUpon>frm_Formularios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CadProfLogADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CadProfLogADM.Designer.cs">
+      <DependentUpon>frm_CadProfLogADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_RelatorioFinal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_RelatorioFinal.Designer.cs">
+      <DependentUpon>frm_RelatorioFinal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_TelaInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_TelaInicio.Designer.cs">
+      <DependentUpon>frm_TelaInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_TelaProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_TelaProfessor.Designer.cs">
+      <DependentUpon>frm_TelaProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_ADDFormulario.resx">
+      <DependentUpon>frm_ADDFormulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_AreaAdmin.resx">
+      <DependentUpon>frm_AreaAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CadastroProfessor.resx">
+      <DependentUpon>frm_CadastroProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_EditInfoLogADM.resx">
+      <DependentUpon>frm_EditInfoLogADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_FormularioAluno.resx">
+      <DependentUpon>frm_FormularioAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_FormularioProfessor.resx">
+      <DependentUpon>frm_FormularioProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Formularios.resx">
+      <DependentUpon>frm_Formularios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CadProfLogADM.resx">
+      <DependentUpon>frm_CadProfLogADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_RelatorioFinal.resx">
+      <DependentUpon>frm_RelatorioFinal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_TelaInicio.resx">
+      <DependentUpon>frm_TelaInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_TelaProfessor.resx">
+      <DependentUpon>frm_TelaProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DB_Formmsture101DataSet.xsc">
+      <DependentUpon>DB_Formmsture101DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_Formmsture101DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_Formmsture101DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_Formmsture101DataSet.xss">
+      <DependentUpon>DB_Formmsture101DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\DB_Formmsture101DataSet1.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
